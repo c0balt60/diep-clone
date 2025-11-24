@@ -2,8 +2,12 @@ body {
     margin: 0;
     padding: 0;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #000000; 
+    background-image: url('assets/grid_test1.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: #adadad;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 #app {
@@ -13,11 +17,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.spritePosition {
-    margin: 10px 0 0 10px;
-    font-size: 0.8em;
 }
 
 .button {
