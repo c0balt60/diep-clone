@@ -8,6 +8,13 @@ export default defineConfig({
         react(),
     ],
     server: {
-        port: 8080
+        proxy: {
+            "/ws": {
+                target: "ws://127.0.0.1:8080",
+                ws: true,
+                changeOrigin: true
+            }
+        },
+        //port: 8080
     }
 })
